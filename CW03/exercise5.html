@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 5 - School Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Hover effect for timetable cells */
+    .timetable td, .timetable th {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .timetable {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .timetable td:hover, .timetable th:hover {
+      background-color: #ffefcc;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .timetable th {
+      background-color: #444;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="exercise1.html">Exercise 1</a></li>
+      <li><a href="exercise2.html">Exercise 2</a></li>
+      <li><a href="exercise3.html">Exercise 3</a></li>
+      <li><a href="exercise4.html">Exercise 4</a></li>
+      <li><a href="exercise5.html">Exercise 5</a></li>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+  <h2>Exercise 5</h2>
+  <h3>Interactive Timetable with Students</h3>
+  <table class="timetable">
+    <tr><th colspan="6">Class Timetable</th></tr>
+    <tr>
+      <th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
+    </tr>
+    <tr>
+      <td>9am-10am</td>
+      <td>Math <br><small>(Alice)</small></td>
+      <td>Science <br><small>(Bob)</small></td>
+      <td>English <br><small>(Charlie)</small></td>
+      <!-- Example of colspan -->
+      <td colspan="2">History & PE <br><small>(Diana & Alice)</small></td>
+    </tr>
+    <tr>
+      <td>10am-11am</td>
+      <td>Math <br><small>(Charlie)</small></td>
+      <td>Geography <br><small>(Alice)</small></td>
+      <td>Math <br><small>(Bob)</small></td>
+      <td>Science <br><small>(Diana)</small></td>
+      <td>Music <br><small>(Charlie)</small></td>
+    </tr>
+    <tr>
+      <td>11am-12pm</td>
+      <td>English <br><small>(Diana)</small></td>
+      <!-- Example of colspan again -->
+      <td colspan="2">Computer Science & Math <br><small>(Alice & Charlie)</small></td>
+      <td>Art <br><small>(Bob)</small></td>
+      <td>PE <br><small>(Alice)</small></td>
+    </tr>
+    <tr>
+      <td>12pm-1pm</td>
+      <td colspan="5">Lunch / Break</td>
+    </tr>
+    <tr>
+      <td>1pm-2pm</td>
+      <td>History <br><small>(Bob)</small></td>
+      <td>Geography <br><small>(Charlie)</small></td>
+      <td>Math <br><small>(Alice)</small></td>
+      <td>Science <br><small>(Diana)</small></td>
+      <td>Drama <br><small>(Charlie)</small></td>
+    </tr>
+    <tr>
+      <td>2pm-3pm</td>
+      <td>Computer Science <br><small>(Alice)</small></td>
+      <td>English <br><small>(Bob)</small></td>
+      <td>Art <br><small>(Charlie)</small></td>
+      <td>Music <br><small>(Diana)</small></td>
+      <td>Sports Club <br><small>(Alice)</small></td>
+    </tr>
+  </table>
+  <a href="index.html">Back to Index</a>
+</body>
+</html>
